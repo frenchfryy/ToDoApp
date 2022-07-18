@@ -11,7 +11,7 @@
 * {
 	margin: 0;
 	box-sizing: border-box;
-	font-family: "Fira sans", sans-serif;
+	font-family: "Open Sans", Light 300;
 }
 
 body {
@@ -154,3 +154,21 @@ main {
 .task .actions .delete {
 	color: crimson;
 }
+
+.container{
+	display: inline-block;
+}
+
+.typed-out{
+	overflow: hidden;
+	border-right: .15em solid var(--pink);
+	white-space: nowrap;
+	animation: 
+	typing 0.8s steps(50, end) forwards;
+	font-size: 1.6rem;
+	width: 0;
+  }
+  @keyframes typing {
+	from { width: 0 }
+	to { width: 100% }
+  }
